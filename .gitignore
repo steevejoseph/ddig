@@ -1,0 +1,10 @@
+.vscode
+
+# don't commit .env
+.flaskenv
+
+# ignore files created by vim
+*.un~
+
+# ignore the directory created by deep_dream.py
+data/
