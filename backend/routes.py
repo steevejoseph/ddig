@@ -1,4 +1,4 @@
-from flask import Flask, json, g, Response, request
+from flask import Flask, json, g, Response, request, render_template
 from flask_cors import CORS
 import requests
 
@@ -8,13 +8,13 @@ import base64
 
 import deep_dream
 
+# template_dir = os.path.abspath('../frontend/build')
 app = Flask(__name__)
 CORS(app)
 
 @app.route('/')
 def index():
-    deep_dream.main()
-    return "We in dis bitch"
+    return render_template('index.html')
 
 @app.route('/upload', methods=['POST'])
 def upload():
@@ -29,7 +29,7 @@ def upload():
         # run algo
         deep_dream.main('in')
 
-                # return output
+        # return output
         with open('out.png', 'rb') as outfile:
             encoded = base64.b64encode(outfile.read())
             
