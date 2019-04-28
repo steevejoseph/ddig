@@ -34,6 +34,7 @@ class App extends Component {
         .post(`${process.env.REACT_APP_API_URL}/upload`, { data: reader.result })
         .then(res => {
           console.log(res);
+          this.props.history.push('/image',  {imageUrl:res.data.link})
         })
         .catch(err => console.log(err))
     };

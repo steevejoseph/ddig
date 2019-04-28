@@ -3,6 +3,8 @@
 # don't commit .env
 .flaskenv
 
+/backend/static/*
+
 # ignore files created by vim
 *.un~
 
