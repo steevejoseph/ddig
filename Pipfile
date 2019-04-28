@@ -10,12 +10,12 @@ flask = "*"
 python-dotenv = "*"
 flask-cors = "*"
 numpy = "*"
-functools = "*"
 tensorflow = "*"
 matplotlib = "*"
 pillow = "*"
 opencv-python = "*"
 requests = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.6"

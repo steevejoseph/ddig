@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "181f3a719c7d6811c5628fda9370857b2c2d1a5e608b9309c9f46ba351bcbd48"
+            "sha256": "63fee02c7b5a79006cd68e11ddfdfcd4d0d9ab5d8caf8e87f43100029b80d6ec"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -73,13 +73,6 @@
             "index": "pypi",
             "version": "==3.0.7"
         },
-        "functools": {
-            "hashes": [
-                "sha256:596ed8999dee419c0749a41bfdd82e4697e80ea27ee01c716003ef55be9a54c5"
-            ],
-            "index": "pypi",
-            "version": "==0.5"
-        },
         "gast": {
             "hashes": [
                 "sha256:fe939df4583692f0512161ec1c880e0a10e71e6a232da045ab8edd3756fbadf0"
@@ -123,6 +116,14 @@
             ],
             "version": "==1.20.1"
         },
+        "gunicorn": {
+            "hashes": [
+                "sha256:aa8e0b40b4157b36a5df5e599f45c9c76d6af43845ba3b3b0efe2c70473c2471",
+                "sha256:fa2662097c66f920f53f70621c6c58ca4a3c4d3434205e608e121b5b3b71f4f3"
+            ],
+            "index": "pypi",
+            "version": "==19.9.0"
+        },
         "h5py": {
             "hashes": [
                 "sha256:05750b91640273c69989c657eaac34b091abdd75efc8c4824c82aaf898a2da0a",
@@ -162,13 +163,6 @@
                 "sha256:ea8b7f6188e6fa117537c3df7da9fc686d485087abf6ac197f9c46432f7e4a3c"
             ],
             "version": "==2.8"
-        },
-        "imgurpython": {
-            "hashes": [
-                "sha256:3ac28501c2f699a78f93a4ab34df7443cebd39a170c9de4adecf0f3852cbdc33"
-            ],
-            "index": "pypi",
-            "version": "==1.1.7"
         },
         "itsdangerous": {
             "hashes": [

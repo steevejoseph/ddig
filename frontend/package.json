@@ -6,6 +6,9 @@
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
+    "axios": "^0.18.0",
+    "dotenv": "^7.0.0",
+    "material-ui-dropzone": "^2.3.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.0"
@@ -18,7 +21,7 @@
     "mv-static": "mv build/static/* ../backend/static && rm -rf build/static",
     "mv-build": "mv build/* ../backend/static/ && rm -rf build",
     "sed": "sed -i 's+/static/static+/static+g' ../backend/templates/index.html",
-    "sed1": "sed -i 's+i.p = \"/static/\"+i.p = \"..\/\"+g' ../backend/templates/index.html",
+    "sed1": "sed -i 's+i.p = \"/static/\"+i.p = \"../\"+g' ../backend/templates/index.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
