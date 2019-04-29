@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# apparently shebang is necessary if using docker smh
+
 from flask import Flask, json, g, Response, request, render_template
 from flask_cors import CORS
 import requests
@@ -18,7 +21,7 @@ CORS(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return "Welcome to the API!"
 
 
 @app.route('/upload', methods=['POST'])
@@ -69,3 +72,7 @@ def upload():
         }
         err = json.dumps(err)
         return Response(err, status=500, mimetype='text/plain')
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", debug=True)

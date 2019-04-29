@@ -31,7 +31,7 @@ class App extends Component {
     reader.onload = () => {
       // console.log(reader.result);
       axios
-        .post(`${process.env.REACT_APP_API_URL}/upload`, { data: reader.result })
+        .post(`${'http://localhost:5000'}/upload`, { data: reader.result })
         .then(res => {
           console.log(res);
           this.props.history.push('/image',  {imageUrl:res.data.link})

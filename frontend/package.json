@@ -2,7 +2,6 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/static",
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
@@ -15,14 +14,9 @@
     "react-scripts": "3.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "clean": "rm -rf ../backend/static/* ../backend/templates/index.html",
-    "build": "npm run clean && react-scripts build && npm run mv-index && npm run mv-static && npm run mv-build && npm run sed && npm run sed1",
-    "mv-index": "mv build/index.html ../backend/templates/index.html",
-    "mv-static": "mv build/static/* ../backend/static && rm -rf build/static",
-    "mv-build": "mv build/* ../backend/static/ && rm -rf build",
-    "sed": "sed -i 's+/static/static+/static+g' ../backend/templates/index.html",
-    "sed1": "sed -i 's+i.p = \"/static/\"+i.p = \"../\"+g' ../backend/templates/index.html",
+    "dev": "react-scripts start",
+    "start": "serve -s build -l 5001",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

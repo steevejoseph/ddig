@@ -3,6 +3,21 @@ services:
   backend:
     container_name: flask
     restart: always
-    build: .
+    build: backend/
     ports:
       - "5000:5000"
+    networks:
+      - appnet
+  frontend:
+    container_name: react
+    restart: always
+    build: frontend/
+    ports:
+      - "5001:5001"
+    networks:
+      - appnet
+    links:
+      - backend
+networks:
+  appnet:
+    driver: bridge
